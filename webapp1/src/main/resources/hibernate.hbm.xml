@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hibernate-configuration PUBLIC
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-
-<hibernate-configuration>
-	
-</hibernate-configuration>
+<hibernate-mapping>
+	<class name="com.abhi.datamodel.Employee" table="EMPLOYEE">
+		<id name="employeeId" column="EMPlOYEE_ID"></id>
+		<property name="name" column="NAME"/>
+		<property name="departmentId" column="DEPARTMENT_ID"/>
+	</class>
+</hibernate-mapping>
